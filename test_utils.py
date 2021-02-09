@@ -17,7 +17,7 @@ class TestUtils(unittest.TestCase):
         pass
     
     def test_integrate(self):
-        self.assertEqual(utils.integrate(' x ** 2 ',0,3), 9)
+        self.assertAlmostEqual(utils.integrate(' x ** 2 ',0,3), 9)     #trouver solution pour avoir une meilleur fonction intégrale
         self.assertAlmostEqual(utils.integrate(' x ** 4',0,3), (48.6))
         pass
 
