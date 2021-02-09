@@ -13,12 +13,7 @@ class TestUtils(unittest.TestCase):
         pass
     
     def test_roots(self):
-        if (a**2-4*b*c<0):
-            return (Nothing)
-        if a**2-4*b*c==0:
-            return (-b/a)
-        if (a**2-4*b*c>0):
-            return ((-b**2+sqrt(a**2-4*b*c))/(2*a), (-b**2-sqrt(a**2-4*b*c))/(2*a))
+        
         pass
     
     def test_integrate(self):

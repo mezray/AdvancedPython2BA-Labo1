@@ -4,7 +4,7 @@
 # Version: February 8, 2018
 from math import sqrt
 import scipy.special as special
-import scipy.integrate as integrate
+import scipy.integrate as integratee
 from scipy.integrate import quad
 
 def fact(n):
@@ -16,7 +16,7 @@ def fact(n):
     else:  
         for i in range(1,n + 1):  
             factorial = factorial*i  
-            return factorial
+        return factorial
     pass
 
 def roots(a, b, c):
@@ -28,8 +28,8 @@ def roots(a, b, c):
         return ((-b**2+sqrt(a**2-4*b*c))/(2*a), (-b**2-sqrt(a**2-4*b*c))/(2*a))
     pass
 
-def inteegrate(function, lower, upper):
-    result = integrate.quad(lambda x: special.function,lower, upper)
+def integrate(function, lower, upper):
+    result = integratee.quad(function, lower, upper)
     return (result)
     pass
 
