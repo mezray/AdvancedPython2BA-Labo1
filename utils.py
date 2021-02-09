@@ -3,9 +3,9 @@
 # Author: Sébastien Combéfis
 # Version: February 8, 2018
 from math import sqrt
-import scipy.special as special
 import scipy.integrate as integratee
 from scipy.integrate import quad
+
 
 def fact(n):
     factorial = 1
@@ -29,11 +29,10 @@ def roots(a, b, c):
     pass
 
 def integrate(function, lower, upper):
-    result = integratee.quad(lambda x: eval(function), lower, upper)
-    return (result)
+    return integratee.quad(lambda x: eval(function), lower, upper)
     pass
 
 if __name__ == '__main__':
 	print(fact(5))
 	print(roots(4, 2, -2))
-	#print(integrate('x ** 2 - 1', -1, 1))
+	print(integrate('x ** 2 ', 0, 3))
