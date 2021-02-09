@@ -20,12 +20,12 @@ def fact(n):
     pass
 
 def roots(a, b, c):
-    if (a**2-4*b*c<0):
+    if ((b**2)-4*a*c<0):
             return (Nothing)
-    if (a**2-4*b*c==0):
-        return (-b/a)
-    if (a**2-4*b*c>0):
-        return ((-b**2+sqrt(a**2-4*b*c))/(2*a), (-b**2-sqrt(a**2-4*b*c))/(2*a))
+    if ((b**2)-4*a*c==0):
+        return (-b/2*a)
+    if ((b**2)-4*a*c>0):
+        return ((((-b)+sqrt((b**2)-4*a*c)))/(2*a), (((-b)-sqrt((b**2-4*a*c)))/(2*a)))
     pass
 
 def integrate(function, lower, upper):
@@ -35,5 +35,5 @@ def integrate(function, lower, upper):
 
 if __name__ == '__main__':
 	print(fact(5))
-	print(roots(1, 0, 1))
-	print(integrate('x ** 2 - 1', -1, 1))
+	print(roots(4, 2, -2))
+	#print(integrate('x ** 2 - 1', -1, 1))

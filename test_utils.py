@@ -9,16 +9,16 @@ import scipy.special as special
 
 class TestUtils(unittest.TestCase):
     def test_fact(self):
-        
+        self.assertEqual(utils.fact(0), 1)
+        self.assertEqual(utils.fact(5), 120)
         pass
     
     def test_roots(self):
-        
+        self.assertEqual(utils.roots(2,1,-1), (0.5,-1))
+        self.assertEqual(utils.roots(4,2,-2), (0.5,-1))
         pass
     
     def test_integrate(self):
-        result = integrate.quad(lambda x: special.jv(2.5,x), 0, 4.5)
-        return (result)
         pass
 
 if __name__ == '__main__':
