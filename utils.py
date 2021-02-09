@@ -29,7 +29,7 @@ def roots(a, b, c):
     pass
 
 def integrate(function, lower, upper):
-    result = integratee.quad(function, lower, upper)
+    result = integratee.quad(lambda x: eval(function), lower, upper)
     return (result)
     pass
 
